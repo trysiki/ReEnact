@@ -6,7 +6,7 @@ import os
 import subprocess
 import time
 
-version_file = 'realesrgan/version.py'
+version_file = 'reEnact/version.py'
 
 
 def readme():
@@ -82,15 +82,15 @@ def get_requirements(filename='requirements.txt'):
 if __name__ == '__main__':
     write_version_py()
     setup(
-        name='realesrgan',
+        name='reEnact',
         version=get_version(),
-        description='Real-ESRGAN aims at developing Practical Algorithms for General Image Restoration',
+        description='reEnact направлен на разработку практических алгоритмов для общего восстановления изображений',
         long_description=readme(),
         long_description_content_type='text/markdown',
-        author='Xintao Wang',
+        author='Trysiki',
         author_email='xintao.wang@outlook.com',
-        keywords='computer vision, pytorch, image restoration, super-resolution, esrgan, real-esrgan',
-        url='https://github.com/xinntao/Real-ESRGAN',
+        keywords='computer vision, pytorch, image restoration, super-resolution',
+        url='https://github.com/trysiki/ReEnact',
         include_package_data=True,
         packages=find_packages(exclude=('options', 'datasets', 'experiments', 'results', 'tb_logger', 'wandb')),
         classifiers=[
